@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Arcade Game</title>
+	<style type="text/css">
+        #stats {
+            position: absolute;
+            font-family: monospace;
+            left: 50px;
+            top: 20px;
+            z-index: 999;
+            color: white;
+	    }
+	    #timeStats {
+            position: absolute;
+            font-family: monospace;
+            left: 700px;
+            top: 20px;
+            z-index: 999;
+            color: white;
+	    }
+	    #endGame {
+            position: absolute;
+            font-family: monospace;
+            left: 400px;
+            top: 300px;
+            z-index: 999;
+            color: white;
+	    }
+    </style>
+      <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="fixedSimpleGame.js"></script>
+	<script src="finalProject.js"></script>
+
+
+</head>
+
+<body onload="init()"> 
+      
+	<div id = "stats"></div>
+	<div id = "timeStats"></div>
+	<div id = "endGame"></div>
+      <div id = "sceneGoesHere"></div>
+      <button id="startGameButton" onclick ="run()">Start Game</button></br>
+      In this game you are either a tank or a car. </br>If you are a tank the goal is to shoot the car before it gets to the red area. </br>If you are the car get to the red area before you are shot! </br>
+      Use WASD to move and SPACE to shoot if you are the tank.
+	
+
+</body>
+
+</html>
